@@ -1,15 +1,14 @@
 # EmailCopier
-Copy Emails in bulk to paste in online
+Copy Emails in batches for sending bulk email batchwise
 
 ## Usage
 ```
-usage: email_copier.py [-h] csv column copy_count delimiter
+usage: email_copier.py [-h] csv column copy_count
 
 positional arguments:
   csv         Name of the CSV file
   column      Name of the column you want to copy
   copy_count  Number of entries to copy in one batch
-  delimiter   Delimiter to concatenate the data
 
 optional arguments:
   -h, --help  show this help message and exit
@@ -17,5 +16,5 @@ optional arguments:
 
 ### Example
 ```
-python email_copier.py  graphics\ -\ Sheet2.csv E-mail\ Id: 100 ,
+python email_copier.py 100_sample_contacts.csv email 10
 ```
